@@ -1,1 +1,2 @@
+#! /bin/bash
 mysqldump -u --all-databases | gzip > /var/www/html/backups/database_$(date +\%d\%m\%Y).sql.gz
